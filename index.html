@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First-project-1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        .home{
+        display:active;
+
+        }
+        .men{
+        display:none;
+        background-color:black;
+        ;}
+        .women{
+        display:none;
+        background-color:black;
+        }
+        .kids{
+           display:none;
+           background-color:black;
+        }
+        .nav-link.active:hover{
+            font-size: 20px;
+            color: white;
+            background-color: black;
+        }
+       .navbar.navbar-expand-lg.bg-body-tertiary {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+
+    </style>
+
+    <script>
+        function showHomeData(){
+            document.getElementById('men-data').style.display = 'none';
+            document.getElementById('women-data').style.display = 'none';
+            document.getElementById('kids-data').style.display = 'none';
+            document.getElementById('home-data').style.display = 'block';
+        }
+        function showMenData(){
+            document.getElementById('men-data').style.display = 'block';
+            document.getElementById('women-data').style.display = 'none';
+            document.getElementById('kids-data').style.display = 'none';
+            document.getElementById('home-data').style.display = 'none';
+        }
+
+        function showWomenData(){
+            document.getElementById('men-data').style.display = 'none';
+            document.getElementById('women-data').style.display = 'block';
+            document.getElementById('kids-data').style.display = 'none';
+            document.getElementById('home-data').style.display = 'none';
+        }
+
+        function showKidsData(){
+            document.getElementById('men-data').style.display = 'none';
+            document.getElementById('women-data').style.display = 'none';
+            document.getElementById('kids-data').style.display = 'block';
+            document.getElementById('home-data').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Aftab's Cloth of Fashion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="showHomeData()" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Home Page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="men-section" onclick="showMenData()">Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="women-section" onclick="showWomenData()">Women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="kids-section" onclick="showKidsData()">Kids</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="home" id="home-data">
+    <div class="banner">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="menand%20woman.png"  height="600px" class="d-block w-100 carousel-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="boybanner.png" height="600px"  class="d-block w-100 carousel-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="girlbanner.jpg" height="600px"  class="d-block w-100 carousel-img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="men" style="height: 700px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;" id="men-data">
+    <div class="container text-center">
+        <div class="row" style="padding-top:10px">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="men1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic casual fit</h5>
+                        <p class="card-text">A timeless combo built for comfort and everyday style.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Shirt – ₹799</li>
+                        <li class="list-group-item">Colors: White, Navy, Olive</li>
+                        <li class="list-group-item">Sizes: 30, 32, 34, 36</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://www.amazon.in/BHIKADIYA-Shirt-Workwear-Essential-Classic/dp/B0D923TGRB?th=1&psc=1" class="card-link">Product Link</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="men2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Men formal Shirt</h5>
+                        <p class="card-text">Smart, polished, and perfect for office or occasions.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Shirt – ₹999</li>
+                        <li class="list-group-item">Colors: Sky Blue, Charcoal, Olive</li>
+                        <li class="list-group-item">Sizes: 38, 40, 42, 44</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://www.meesho.com/men-formal-shirts-dark-green/p/6hk8zr" class="card-link">Product Link</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="men3.jpg" height="380px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Formal Shirt</h5>
+                        <p class="card-text">Elegant design with a crisp finish for a sharp look.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Shirt – ₹1,499</li>
+                        <li class="list-group-item">Colors: Black, Green, Light Grey</li>
+                        <li class="list-group-item">Sizes: 38, 40, 42, 44</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://www.meesho.com/premium-formal-shirt-for-men/p/8ra4r8?srsltid=AfmBOooHE4TU4zxcyCeseAvxxRkSpStONsYl62Ufbw6OiVwupxo3b7xy" class="card-link">Product Link</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="men4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">T-Shirt</h5>
+                        <p class="card-text">Casual comfort with a clean, laid-back vibe.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">T-Shirt – ₹499</li>
+                        <li class="list-group-item">Colors: Yello, White, Olive</li>
+                        <li class="list-group-item">Sizes: S, M, L, XL</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://www.cotstyle.com/products/cotstyle-cotton-fabrics-round-neck-short-length-plain-half-sleeve-casual-daily-wear-mens-t-shirts-pack-of-1-peach-pure?srsltid=AfmBOooKxhhL2PvSlV3khDGULklvUl2qjSvX86EO4Ul86qC6IWAJoXSg" class="card-link">Product Link</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="women" style="height: 700px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;" id="women-data">
+            <div class="container text-center">
+                <div class="row" style="padding-top:10px">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="women1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ethnic Special</h5>
+                                <p class="card-text">Traditional charm with a festive touch.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Outfit – ₹1,899</li>
+                                <li class="list-group-item">Colors: Wine, Teal Blue, Cream</li>
+                                <li class="list-group-item">Sizes: S, M, L, XL</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://www.amazon.in/GoSriKi-Anarkali-Printed-Palazzo-RED-GS_XXL_Red_XX-Large/dp/B0DC6KDRTJ?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A1WYWER0W24N8S&th=1&psc=1" class="card-link">Product Link</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="women2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kurta Sets</h5>
+                                <p class="card-text">Graceful and comfy, perfect for work or casual days.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Set – ₹1,499</li>
+                                <li class="list-group-item">Colors: Mint Green, Rose Pink, Mustard</li>
+                                <li class="list-group-item">Sizes: S, M, L, XL</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://www.myntra.com/kurta-sets/indo+era/indo-era-ethnic-motifs-embroidered-regular-thread-work-kurta-with-salwar--dupatta/29629130/buy" class="card-link">Product Link</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="women3.jpg" height="430px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Casual Wear Kutrta</h5>
+                                <p class="card-text">Elegant design with a crisp finish for a sharp look.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Top – ₹899</li>
+                                <li class="list-group-item">Colors: Black, Green, Light Grey</li>
+                                <li class="list-group-item">Sizes: 38, 40, 42, 44</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://www.nykaafashion.com/stylum-womens-floral-printed-rayon-co-ord-set-of-2/p/12671840?adsource=shopping_india&skuId=12671730&srsltid=AfmBOorcDZFOfwBnrOBO20rj2cxd3JlI36qfwW72btmRmepG5o8nwybjNi0" class="card-link">Product Link</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="women4.jpg" height="430px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Formal Office Wear Kurta</h5>
+                                <p class="card-text">Modern ethnic touch with a professional finish.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Kurta – ₹1,199</li>
+                                <li class="list-group-item">Colors: Light Blue, Beige, red</li>
+                                <li class="list-group-item">Sizes: 38, 40, 42, 44</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="https://www.myntra.com/sarees/saree+mall/saree-mall-floral-sequinned-pure-georgette-sarees/33482297/buy" class="card-link">Product Link</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+<div class="kids" style="height: 700px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;" id="kids-data">
+    <div class="container text-center">
+        <div class="row" style="padding-top:10px">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="kid1.jpg" height="430" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Baby Rompers</h5>
+                        <p class="card-text">Soft and breathable for all-day comfort.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Price – ₹499</li>
+                        <li class="list-group-item">Colors: Sky Blue, Yellow, Pink</li>
+                        <li class="list-group-item">Sizes: 0-3M, 3-6M, 6-12M</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://www.firstcry.com/babyhug-disney/babyhug-disney-cotton-knit-half-sleeves-front-open-romper-with-lion-king-graphics-white/19786041/product-detail?ref=GoogleShopping_6_164&srsltid=AfmBOorVuL3TO-X4j-7w2TY6euRhpQt8qCq6_GOyjidF3-bc4Cb0xof2Gso" class="card-link">Product Link</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="kid2.jpg" height="430px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Baby Frock</h5>
+                        <p class="card-text">Cute and comfy for little princesses.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Price – ₹699</li>
+                        <li class="list-group-item">Colors: Peach, Lavender, Mint</li>
+                        <li class="list-group-item">Sizes: 6-12M, 1-2Y, 2-3Y</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://www.hopscotch.in/product/1279763/Girls-Purple-Heart-Print-Party-Dress?sku=ZHG-4719381&utm_source=Google&utm_medium=performancemax&utm_campaign=perfmax_all&utm_source=google&utm_campaign=Shopping_Campaign_07mar2025&utm_medium=shopping&gad_source=1&gad_campaignid=22310542953&gbraid=0AAAAACuKiFhpaTZY4cVRa1wbFjgRqYoXD&gclid=CjwKCAjwvuLDBhAOEiwAPtF0VmvdUVm8JXWV2N5ogJPQe0FdLy6MVg5zr2YCLthgJ-oAmqoMpCbzRBoCGZ8QAvD_BwE" class="card-link">Product Link</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="kid3.jpg" height="430px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Baby Dungarees</h5>
+                        <p class="card-text">Trendy and playful for active babies.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Price – ₹799</li>
+                        <li class="list-group-item">Colors: Denim Blue, Olive, Red</li>
+                        <li class="list-group-item">Sizes: 6-12M, 1-2Y, 2-3Y</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://www.amazon.in/BABY-GO-Cotton-Dungaree-Months/dp/B095HLSXZ9?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A1WYWER0W24N8S&th=1&psc=1" class="card-link">Product Link</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="kid4.jpg" height="430px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Baby Sleepsuit</h5>
+                        <p class="card-text">Cozy nights with ultra-soft fabric.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Price – ₹599</li>
+                        <li class="list-group-item">Colors: White, Grey, Light Pink</li>
+                        <li class="list-group-item">Sizes: 0-3M, 3-6M, 6-12M</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://zivamoms.com/baby-sleepsuit-cap-girl-pink-dot?srsltid=AfmBOooSIJ-Qvbx2dgY_eBgR7w_2mk4CHklP-szNyrRtC6YZoQgPsNl8" class="card-link">Product Link</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <!-- Bootstrap Footer -->
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-md-4 mb-4">
+                    <h5>About Us</h5>
+                    <p>We create modern, simple, and functional web experiences for everyone.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links of Partners</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion" class="text-white text-decoration-none">Amazon</a></li>
+                        <li><a href="https://www.meesho.com/" class="text-white text-decoration-none">meesho</a></li>
+                        <li><a href="https://www.myntra.com/" class="text-white text-decoration-none">myntra</a></li>
+                        <li><a href="https://www.firstcry.com/" class="text-white text-decoration-none">firstcry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <p>Email: aftab.50100@gmail.com</p>
+                    <p>Phone: +91 8217********</p>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="text-center py-3 border-top border-secondary">
+                <p class="mb-0">&copy; 2025 YourWebsite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
